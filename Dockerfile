@@ -11,18 +11,18 @@ ENV MACHTYPE=x86_64
 ENV PATH=/root/bin/x86_64:/opt/samtabix/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 RUN yum update -y && yum install -y \
- gcc \
  openssl-static.x86_64 \
  usbmuxd-devel.x86_64 \
  mariadb-devel.x86_64 \
  libimobiledevice-devel.x86_64 \
  ghostscript \
+ libpng-devel.x86_64 \
  libplist-devel.x86_64 \
+ gcc \
  libstdc++-devel.x86_64 \
  libstdc++-static.x86_64 \
  make \
  unzip \
- libpng-devel.x86_64 \
  tcsh \
  perl \
  git \
